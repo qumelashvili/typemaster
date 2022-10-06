@@ -1,0 +1,140 @@
+*{
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 24px 30px 24px;
+}
+button{
+    background-color: #E8EFF2;
+    border-radius: 8px;
+    width: 170px;
+    height: 48px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+header{
+    padding: 0px 24px 0px 24px;
+    max-width: 445px;
+}
+header h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #162542;
+    line-height: 48px;
+}
+header p{
+    color: #7B8BAD;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.button-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.button-area button{
+    background-color: #F16718;
+    color: white;
+}
+.button-area p{
+    font-weight: 700;
+}
+.gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.gallery-item1{
+    width: 100%;
+    height: 331px;
+    margin-left: 24px;  
+}
+.gallery-item1 img{
+    border-radius: 16px 0px 0px 16px;
+}
+.gallery-item2{
+    width: 120px;
+    height: 193px;
+    background-color: #F16718;
+    border-radius: 0px 16px 16px 0px;
+    margin-top: 20px;
+}
+.gallery-item2 img{
+    border-radius: 0px 16px 16px 0px;
+}
+.gallery-item3 img{
+    width: 220px;
+    height: 193px;
+    margin: 20px 0px 0px 20px;
+    border-radius : 16px;
+}
+main{
+    margin-top: 50px;
+    padding: 0px 24px 0px 24px;
+}
+main p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+.main-header{
+    text-align: center;
+}
+.main-header h1{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 36px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    max-width: 330px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content h1{
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 70px 0px 70px;
+}
+.icon img{
+    width: 50%;
+    height: 50%;
+}
+.icon{
+    width: 65px;
+    height: 65px;
+    background-color: #F16718;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
