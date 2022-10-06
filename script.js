@@ -26,8 +26,8 @@ var main = document.querySelector(".content")
 
 for(var x of content){
     let text = `
-    <div class="card">
-        <div class="icon">
+    <div class="card flex">
+        <div class="icon flex">
             <img src=${x.img} alt="Here may be icon">
         </div>
         <div>
