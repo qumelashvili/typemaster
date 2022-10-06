@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 *{
     font-family: 'Barlow', sans-serif;
 }
@@ -6,11 +7,10 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+/* LOCAL STYLES */
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 27px 24px 30px 24px;
+    justify-content: space-between;
 }
 button{
     background-color: #E8EFF2;
@@ -38,10 +38,7 @@ header p{
     font-size: 16px;
 }
 .button-area{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     margin-top: 30px;
 }
 .button-area button{
@@ -53,9 +50,6 @@ header p{
 }
 .gallery{
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 .gallery-item img{
     width: 100%;
@@ -105,17 +99,12 @@ main p{
     line-height: 36px;
 }
 .card{
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    align-items: center;
     justify-content: center;
     margin-top: 64px;
     max-width: 330px;
 }
 .content{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .content h1{
@@ -134,7 +123,17 @@ main p{
     height: 65px;
     background-color: #F16718;
     border-radius: 16px;
-    display: flex;
     justify-content: center;
+}
+
+/* CLASS SHORTCUTS */
+
+/* .flex applied on: 
+[nav, .button-area, .gallery, .content]
+[From JS code : .card, .icon]
+*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
