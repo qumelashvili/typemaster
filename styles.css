@@ -20,10 +20,15 @@ button{
     border: 0px;
     font-weight: 700;
     font-size: 16px;
+    cursor: pointer;
 }
 header{
     padding: 0px 24px 0px 24px;
-    max-width: 445px;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .hidden-img{
+    display: none;
 }
 header h1{
     font-size: 48px;
@@ -75,13 +80,13 @@ header p{
     border-radius: 0px 16px 16px 0px;
 }
 .gallery-item3 img{
-    width: 220px;
+    width: 30vw;
     height: 193px;
     margin: 20px 0px 0px 20px;
     border-radius : 16px;
 }
 main{
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 0px 24px 0px 24px;
 }
 main p{
@@ -92,11 +97,13 @@ main p{
 }
 .main-header{
     text-align: center;
+    justify-content: center;
 }
 .main-header h1{
     font-size: 34px;
     font-weight: 900;
     line-height: 36px;
+    max-width: 100%;
 }
 .card{
     text-align: center;
@@ -125,6 +132,15 @@ main p{
     border-radius: 16px;
     justify-content: center;
 }
+footer{
+    font-size: 16px;
+    font-weight: 500;
+    color: #7B8BAD;
+    display: flex;
+    justify-content: center;
+    margin-top: 128px;
+}
+
 
 /* CLASS SHORTCUTS */
 
@@ -136,4 +152,147 @@ main p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+
+@media screen and (min-width: 768px){
+    body{
+        padding: 0px 40px 0px 40px;
+        box-sizing: border-box;
+    }
+    header{
+        display: flex;
+        width: 50%;
+        margin-top: 50px;
+    }
+    header .hidden-img{
+        display: inline-block;
+        width: 478px;
+        height: 425px;
+        position: absolute;
+        left: 447px;
+    }
+    header .hidden-img img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    header .text-content{
+        max-width: 340px;
+    }
+    .gallery{
+        margin-top: 120px;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+    .gallery-item{
+        height: 320px;
+        border-radius: 16px;
+        justify-content: center;
+    }
+    .gallery-item1{
+        display: none;
+    }
+    .gallery-item2{
+        width: 212px;
+    }
+    .gallery-item2 img{
+        content: url('./assets/tablet/image-phone-and-keyboard.jpg');
+        border-radius: 16px;
+    }
+    .gallery-item3{
+        margin-left: 28px;
+    }
+    .gallery-item3 img{
+        content: url('./assets/tablet/image-glass-and-keyboard.jpg');
+        margin: 0px;
+        height: 100%;
+        width: 435px;
+    }
+    main{
+        padding: 0px;
+    }
+    main p{
+        text-align: start;
+    }
+    .main-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: justify;
+        width: 100%;
+    }
+    .main-header h1{
+        max-width: 250px;
+    }
+    .content{
+        justify-content: space-between;
+    }
+    .content h1{
+        padding: 0px;
+        text-align: start;
+        padding-right: 150px;
+    }
+    .card{
+        justify-content: start;
+    }
+    .icon{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url('./assets/shared/pattern-square.svg'), url('./assets/shared/pattern-square.svg');
+        background-repeat: no-repeat;
+        background-position-x: 110%, -120px;
+        background-position-y: 155px, 915px;
+        padding: 0px 165px 0px 165px;
+    }
+    header .hidden-img{
+        left: 735px;
+        width: 540px;
+    }
+    header .hidden-img img{
+        content: url('./assets/desktop/image-keyboard.jpg');
+    }
+    .gallery-item{
+        height: 480px;
+        margin-top: 70px;
+    }
+    .gallery-item2{
+        width: 255px;
+    }
+    .gallery-item2 img{
+        content: url('./assets/desktop/image-phone-and-keyboard.jpg');
+    }
+    .gallery-item3{
+        content: url('./assets/desktop/image-glass-and-keyboard.jpg');
+        width: 445px;
+    }
+    .main-header{
+        display: block;
+        width: 255px;
+        position: absolute;
+        top: 770px;
+        left: 1000px;
+    }
+    main p{
+        padding-right: 30px;
+    }
+    .content h1{
+        padding-right: 50px;
+    }
+    .card{
+        max-width: 266px;
+    }
+}
+
+nav button:hover {
+    background-color: #162542;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.button-area button:hover{
+    background-color: #FF9B62;
+    transition: 0.5s;
 }
